@@ -1,22 +1,34 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 759px;
+  gap: 24px;
+  border: 1px solid red;
 `;
 
-export const Post = styled.article`
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  h3 {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  a {
-    color: #7dba40;
-    text-decoration: underline;
-  }
+export const ContainerContent = styled.div`
+  width: 1253px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+`;
+
+export const Button = styled.button`
+  width: 176px;
+  height: 64px;
+  border-radius: 50px;
+  padding: 20px 30px 20px 30px;
+  background-color: #C6B92D; 
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+
 `;

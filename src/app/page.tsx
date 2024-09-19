@@ -28,8 +28,8 @@ const HomePage = () => {
       <Header />
       <main>
         <SEOSection />
-        <ContactForm />
         <BlogSection />
+        <ContactForm />
       </main>
       <Footer />
     </>
