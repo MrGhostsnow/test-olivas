@@ -7,7 +7,6 @@ export const Container = styled.section`
   justify-content: center;
   height: 759px;
   gap: 24px;
-  border: 1px solid red;
 `;
 
 export const ContainerContent = styled.div`

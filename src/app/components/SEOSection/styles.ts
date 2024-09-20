@@ -8,7 +8,6 @@ export const Container = styled.section`
   background-color: #fff;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 `;
 
 export const ContainerContent = styled.div`
@@ -18,9 +17,9 @@ export const ContainerContent = styled.div`
   padding: 37px 0px 37px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border: 1px solid red;
   box-shadow: 
   0px 4px 8px 0px #8585851A, 
   0px 14px 14px 0px #85858517, 
@@ -51,7 +50,6 @@ export const TextContent = styled.div`
   justify-content: space-around;
   padding: 0px 30px 0px 0px;
   gap: 40px;
-  border: 1px solid red;
 `;
 
 export const Text = styled.p`

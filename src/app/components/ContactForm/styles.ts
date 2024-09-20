@@ -17,7 +17,6 @@ export const ContainerContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 `;
 
 export const TitleForm = styled.div`
@@ -55,14 +54,12 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border: 1px solid red;
 `;
 
 export const FormGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
-  border: 1px solid red;
 `;
 
 export const FormBlock = styled.div`
@@ -71,7 +68,6 @@ export const FormBlock = styled.div`
   justify-content: center;
   gap: 8px;
   height: 110px;
-  border: 1px solid red;
   width: 425px;
 `;
 
@@ -81,7 +77,6 @@ export const FormBlockMessage = styled.div`
   justify-content: center;
   gap: 8px;
   height: 200px;
-  border: 1px solid red;
 `;
 
 export const FormInput = styled.div`
@@ -89,7 +84,6 @@ export const FormInput = styled.div`
   justify-content: center;
   gap: 14px;
   height: 44px;
-  border: 1px solid red;
   width: 844px;
   align-self: center;
   p{

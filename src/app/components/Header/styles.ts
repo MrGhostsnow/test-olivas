@@ -5,7 +5,6 @@ export const Container = styled.header`
   justify-content: center;
   padding: 20px;
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
 `;
 
 export const SectionContent = styled.div`
@@ -13,7 +12,6 @@ export const SectionContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 `;
 
 export const Logo = styled.img`
