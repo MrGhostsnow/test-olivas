@@ -6,6 +6,7 @@ import BlogSection from "../app/components/BlogSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import PerformaceSection from "./components/PerformaceSection";
+import TopPage from "./components/TopPage";
 
 const HomePage = () => {
   return (
@@ -28,6 +29,7 @@ const HomePage = () => {
       </Head>
       <Header />
       <main>
+        <TopPage />
         <SEOSection />
         <PerformaceSection />
         <BlogSection />
