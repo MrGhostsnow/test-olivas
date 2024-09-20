@@ -25,11 +25,15 @@ Siga os passos abaixo para rodar o projeto localmente:
    ```bash
    git clone https://github.com/MrGhostsnow/test-olivas.git
 
-2.Instale as dependências:
-  npm install
+2. Instale as dependências:
 
-3.Inicie o servidor de desenvolvimento:
-  npm run dev
+   ```bash
+   npm install
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
 
 📜 Scripts Disponíveis
 No diretório do projeto, você pode executar:
