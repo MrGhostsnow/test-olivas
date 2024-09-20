@@ -2,19 +2,6 @@
 
 Este projeto é uma aplicação desenvolvida com **Next.js** que consome um endpoint para exibir as últimas notícias em um carrossel estilizado utilizando **Swiper** e **styled-components**. A aplicação também implementa práticas de **SEO** e é **responsiva**, garantindo uma boa experiência em dispositivos móveis e desktops.
 
-## 📋 Índice
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Scripts Disponíveis](#scripts-disponíveis)
-- [Componentes](#componentes)
-- [API Utilizada](#api-utilizada)
-- [Funcionalidades](#funcionalidades)
-- [Responsividade](#responsividade)
-- [Boas Práticas de SEO](#boas-práticas-de-seo)
-- [Licença](#licença)
-
 ## Sobre o Projeto
 
 O projeto consiste em uma página de blog que exibe as últimas notícias de um endpoint fornecido. As notícias são exibidas em um carrossel, permitindo ao usuário navegar entre os diferentes posts. O design é minimalista e responsivo, seguindo o layout fornecido com uma grid de 1260px centralizada.
