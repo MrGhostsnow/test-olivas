@@ -15,6 +15,18 @@ export const ContainerContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
+  @media (max-width: 1024px) {
+    width: 900px;
+  }
+
+  @media (max-width: 768px) {
+    width: 700px;
+  }
+
+  @media (max-width: 625px) {
+    width: 340px;
+  }
 `;
 
 export const Button = styled.button`

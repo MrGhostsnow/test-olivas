@@ -9,6 +9,16 @@ export const Container = styled.section`
   background-color: #fff;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 1150px;
+  }
+
+  @media (max-width: 425px) {
+    height: 1600px;
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+  }
 `;
 
 export const ContainerContent = styled.div`
@@ -16,6 +26,19 @@ export const ContainerContent = styled.div`
   display: flex;
   align-items: center;
   gap: 80px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 930px;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+  }
+
+  @media (max-width: 425px) {
+    height: 1000px;
+    width: 350px;
+    height: 700px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -24,6 +47,10 @@ export const Title = styled.h2`
   text-align: center;
   line-height: 54px;
   color: #6A0F65;
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+  }
 `;
 
 export const TitleSection = styled.div`
@@ -33,6 +60,14 @@ export const TitleSection = styled.div`
   font-weight: 500;
   line-height: 45.6px;
   color: #5D5D5D;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+  }
 `;
 
 export const TextContent = styled.div`
@@ -42,6 +77,17 @@ export const TextContent = styled.div`
   justify-content: space-around;
   padding: 0px 30px 0px 0px;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+    gap: 60px;
+  }
 `;
 
 export const Text = styled.p`
@@ -51,11 +97,31 @@ export const Text = styled.p`
   line-height: 24px;
   font-weight: 400;
   color: #5D5D5D;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+  }
 `;
 
 export const ImageContent = styled.div`
   width: 357px;
   height: 327px;
+
+  @media (max-width: 425px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+    @media (max-width: 425px) {
+      width: 300px;
+      height: 300px;
+      }
 `;
 
 export const ImagesSection = styled.div`
@@ -65,6 +131,12 @@ export const ImagesSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+  }
 `;
 
 export const SectionLabel = styled.div`

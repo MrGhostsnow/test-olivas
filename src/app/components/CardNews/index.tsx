@@ -20,7 +20,7 @@ const limitWords = (text: string, limit: number) => {
 const CardNews = ({ image, title, description, link }: CardNewsProps) => {
   return (
     <ContainerCard>
-      <img src={image} alt="image" width={346.5} height={185} />
+      <img src={image} alt="image" />
       <Title>{title}</Title>
       <Description
         dangerouslySetInnerHTML={{ __html: limitWords(description, 12) }}

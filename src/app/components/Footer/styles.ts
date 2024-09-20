@@ -7,6 +7,10 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   height: 227px;
+
+  @media (max-width: 425px) {
+    height: 400px;
+  }
 `;
 
 export const ContainerContent = styled.div`
@@ -16,6 +20,18 @@ export const ContainerContent = styled.div`
   width: 800px;
   padding: 30px 0;
   gap: 56px;
+
+  @media (max-width: 768px) {
+    width: 700px;
+    }
+
+  @media (max-width: 425px) {
+    width: 350px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Company = styled.div`
@@ -32,6 +48,14 @@ export const Company = styled.div`
     color: #7F7F7F;
     font-weight: 400;
     line-height: 16.8px;
+
+    @media (max-width: 425px) {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
   }
 `;
 

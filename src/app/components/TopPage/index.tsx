@@ -17,6 +17,7 @@ const TopPage = () => {
         <TextContent>
           <TitleSection>
             Teste de desenvolvimento
+            <br />
             <span style={{ color: "#DCD154" }}>Front-end Next.JS</span>
           </TitleSection>
           <Text>
@@ -29,7 +30,13 @@ const TopPage = () => {
           <Button>Entrar em contato</Button>
         </TextContent>
         <ImageContent>
-          <Image src={toppage} alt="toppage" width={530} height={528} />
+          <Image
+            src={toppage}
+            alt="toppage"
+            width={530}
+            height={528}
+            className="image"
+          />
         </ImageContent>
       </ContainerContent>
     </Container>

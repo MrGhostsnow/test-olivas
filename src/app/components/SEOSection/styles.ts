@@ -8,6 +8,14 @@ export const Container = styled.section`
   background-color: #fff;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    height: 1150px;
+  }
+
+  @media (max-width: 425px) {
+    height: 1400px;
+  }
 `;
 
 export const ContainerContent = styled.div`
@@ -26,6 +34,18 @@ export const ContainerContent = styled.div`
   0px 32px 19px 0px #8585850D, 
   0px 56px 23px 0px #85858503, 
   0px 88px 25px 0px #85858500;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: 980px;
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 425px) {
+    height: 1300px;
+    width: 350px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,6 +61,18 @@ export const Content = styled.div`
   height: 464px;
   justify-content: space-between;
   padding: 0px 30px 0px 30px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+  }
+
+  @media (max-width: 425px) {
+    height: 1000px;
+    width: 350px;
+  }
 `;
 
 export const TextContent = styled.div`
@@ -50,6 +82,17 @@ export const TextContent = styled.div`
   justify-content: space-around;
   padding: 0px 30px 0px 0px;
   gap: 40px;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+  }
+
+
+  @media (max-width: 425px) {
+    width: 300px;
+  }
 `;
 
 export const Text = styled.p`
@@ -57,15 +100,29 @@ export const Text = styled.p`
   line-height: 32px;
   font-weight: 400;
   color: #5D5D5D;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 `;
 
 export const ImageContent = styled.div`
   width: 400px;
+
+  @media (max-width: 425px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img{
+    @media (max-width: 425px) {
+      width: 350px;
+      height: 350px;
+    }
+  }
 `;
 
-export const Image = styled.img`  
-  width: 100%;  
-`;
 
 export const List = styled.div`
   display: flex;

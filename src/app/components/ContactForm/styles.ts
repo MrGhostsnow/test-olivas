@@ -8,6 +8,14 @@ export const Container = styled.section`
   align-items: center;
   flex-direction: column;
   gap: 64px;
+
+  @media (max-width: 768px) {
+    height: 1300px;
+  }
+
+  @media (max-width: 425px) {
+    height: 1400px;
+  }
 `;
 
 export const ContainerContent = styled.div`
@@ -17,6 +25,16 @@ export const ContainerContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 600px;
+    height: 1200px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+    height: 1400px;
+  }
 `;
 
 export const TitleForm = styled.div`
@@ -34,6 +52,10 @@ export const TitleForm = styled.div`
     line-height: 54px;
     font-weight: 500;
     height: 54px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   p {
@@ -43,6 +65,25 @@ export const TitleForm = styled.div`
     height: 24px;
     width: 860px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 600px;
+    }
+
+    @media (max-width: 425px) {
+      width: 380px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 600px;
+    height: 200px;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+    height: 350px;
   }
 
 `;
@@ -54,12 +95,29 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 600px;
+    align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+
+  }
 `;
 
 export const FormGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (max-width: 425px) {
+  }
 `;
 
 export const FormBlock = styled.div`
@@ -69,6 +127,11 @@ export const FormBlock = styled.div`
   gap: 8px;
   height: 110px;
   width: 425px;
+
+  @media (max-width: 425px) {
+    align-items: center;
+  }
+  
 `;
 
 export const FormBlockMessage = styled.div`
@@ -77,6 +140,19 @@ export const FormBlockMessage = styled.div`
   justify-content: center;
   gap: 8px;
   height: 200px;
+
+  &.formMessage{
+    width: 870px;
+
+    @media (max-width: 768px) {
+      width: 600px;
+    }
+
+    @media (max-width: 425px) {
+      width: 350px;
+      align-items: center;
+  }
+  
 `;
 
 export const FormInput = styled.div`
@@ -91,6 +167,14 @@ export const FormInput = styled.div`
     font-weight: 400;
     line-height: 21.6px;
     color: #5D5D5D;
+  }
+
+  @media (max-width: 768px) {
+    width: 600px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
   }
 `;
 
@@ -111,6 +195,10 @@ export const Input = styled.input`
   border-radius: 5px;
   outline: none;
   color: black;
+
+  @media (max-width: 425px) {
+    width: 300px;
+  }
 `;
 
 export const Option = styled.select`
@@ -123,6 +211,10 @@ export const Option = styled.select`
   border-radius: 5px;
   outline: none;
   color: black;
+
+   @media (max-width: 425px) {
+    width: 300px;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -135,6 +227,14 @@ export const TextArea = styled.textarea`
   border-radius: 5px;
   outline: none;
   color: black;
+
+  @media (max-width: 768px) {
+    width: 600px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
+  }
 `;
 
 export const Button = styled.button`

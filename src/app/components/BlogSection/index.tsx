@@ -55,7 +55,8 @@ const BlogSection = () => {
           slidesPerView={3}
           pagination={{ clickable: true }}
           breakpoints={{
-            1024: { slidesPerView: 3 },
+            1044: { slidesPerView: 3 },
+            1024: { slidesPerView: 2 },
             600: { slidesPerView: 2 },
             320: { slidesPerView: 1 },
           }}

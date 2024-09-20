@@ -104,7 +104,7 @@ const ContactForm = () => {
               <Option name="job" value={formData.function} required />
             </FormBlock>
           </FormGrid>
-          <FormBlockMessage style={{ width: "870px" }}>
+          <FormBlockMessage className="formMessage" style={{ width: "870px" }}>
             <Label htmlFor="message">
               Mensagem <span style={{ color: "#C6B92D" }}>*</span>
             </Label>

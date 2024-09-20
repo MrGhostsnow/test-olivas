@@ -16,6 +16,20 @@ export const ContainerCard = styled.div`
     0px 56px 23px 0px #85858503,
     0px 88px 25px 0px #85858500;
 
+    img {
+        width: 346.5px;
+        height: 185px;
+
+        @media (max-width: 768px) {
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 330px;
+        height: 500px;
+    }
+
 `;
 
 export const Description = styled.p`
