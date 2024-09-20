@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blog Últimas Notícias
 
-## Getting Started
+Este projeto é uma aplicação desenvolvida com **Next.js** que consome um endpoint para exibir as últimas notícias em um carrossel estilizado utilizando **Swiper** e **styled-components**. A aplicação também implementa práticas de **SEO** e é **responsiva**, garantindo uma boa experiência em dispositivos móveis e desktops.
 
-First, run the development server:
+## 📋 Índice
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Componentes](#componentes)
+- [API Utilizada](#api-utilizada)
+- [Funcionalidades](#funcionalidades)
+- [Responsividade](#responsividade)
+- [Boas Práticas de SEO](#boas-práticas-de-seo)
+- [Licença](#licença)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sobre o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto consiste em uma página de blog que exibe as últimas notícias de um endpoint fornecido. As notícias são exibidas em um carrossel, permitindo ao usuário navegar entre os diferentes posts. O design é minimalista e responsivo, seguindo o layout fornecido com uma grid de 1260px centralizada.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Next.js**: Framework React para desenvolvimento de aplicações web com renderização no lado do servidor (SSR) e otimizações.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática opcional ao código.
+- **Styled-components**: Biblioteca para estilização de componentes usando JavaScript.
+- **Swiper**: Biblioteca para criar carrosséis e sliders.
+- **Fetch API**: Para realizar requisições HTTP e buscar dados da API.
+- **SEO**: Boas práticas de otimização para motores de busca.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Instalação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Siga os passos abaixo para rodar o projeto localmente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone este repositório:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/MrGhostsnow/test-olivas.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.Instale as dependências:
+  npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.Inicie o servidor de desenvolvimento:
+  npm run dev
+
+📜 Scripts Disponíveis
+No diretório do projeto, você pode executar:
+
+npm run dev: Roda a aplicação em modo de desenvolvimento.
+npm run build: Compila o projeto para produção.
+npm start: Inicia a aplicação em modo de produção após a compilação.
+
+🧩 Componentes
+A aplicação é estruturada em componentes reutilizáveis, facilitando a manutenção e expansão do código.
+
+BlogSection
+Componente principal que exibe a seção "Últimas do Blog". Ele realiza uma chamada à API para buscar as postagens e renderiza os componentes CardNews dentro do carrossel Swiper.
+
+CardNews
+Renderiza o conteúdo de cada postagem de blog, exibindo imagem, título, descrição e um link para ler mais.
+
+styles.ts
+Arquivo que utiliza styled-components para aplicar estilos customizados aos componentes.
+
+🌐 API Utilizada
+A aplicação faz requisições para o seguinte endpoint da API:
+
+Endpoint: https://www.olivas.digital/wp-json/wp/v2/posts?categories=373
+A resposta da API contém as últimas postagens de um blog em formato JSON, que são usadas para exibir as notícias no carrossel.
+
+⚙️ Funcionalidades
+Carrossel: Utiliza a biblioteca Swiper para exibir as postagens em um carrossel, com navegação e paginação.
+Chamada de API: Faz uma requisição à API do WordPress para buscar as postagens do blog.
+Responsividade: O layout é totalmente responsivo, adaptando-se para diferentes tamanhos de tela.
+📱 Responsividade
+A aplicação foi construída com foco em uma boa experiência de usuário em dispositivos móveis. O layout utiliza uma grid centralizada de 1260px, sendo ajustado em telas menores, e o carrossel exibe uma quantidade variável de slides dependendo da largura da tela.
+
+Mobile: 1 slide por vez.
+Tablets: 2 slides por vez.
+Desktops: 3 slides por vez.
+
+🧠 Boas Práticas de SEO
+A aplicação inclui as seguintes práticas de SEO:
+
+Meta Tags dinâmicas: O título da página e as meta descrições são gerados dinamicamente com base no conteúdo.
+Performance: O código é otimizado para minimizar o tempo de carregamento da página.
+Acessibilidade: Uso adequado de alt nas imagens e tags semânticas HTML5.
+
+
+
